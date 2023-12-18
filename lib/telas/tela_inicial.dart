@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:telas/Widgets/Buttons.dart';
+import 'package:telas/telas/MenuScreen.dart';
 
 class TelaInicial extends StatefulWidget {
   const TelaInicial({super.key});
@@ -15,7 +16,7 @@ class _TelaInicialState extends State<TelaInicial> {
       backgroundColor: Color(0xFF87A586),
       extendBodyBehindAppBar: true,
       appBar: AppBar(
-        leading: IconButton(onPressed: () {  }, icon: Image.asset("images/menu.png")),
+        leading: IconButton(onPressed: () { Navigator.push(context, MaterialPageRoute(builder: (context) => const MenuScreen  ()),  ); }, icon: Image.asset("images/menu.png")),
           backgroundColor: Colors.transparent,
         elevation: 0,
       ),
