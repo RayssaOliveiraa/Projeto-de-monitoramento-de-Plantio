@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:telas/telas/exempl.dart';
 
+// ignore: must_be_immutable
 class BtnRedondo extends StatelessWidget {
 
   late String nomeBotao;

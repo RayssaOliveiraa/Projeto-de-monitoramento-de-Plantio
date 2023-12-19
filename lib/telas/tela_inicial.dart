@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:telas/Widgets/Buttons.dart';
+import 'package:telas/widgets/Buttons.dart';
 import 'package:telas/telas/MenuScreen.dart';
 
 class TelaInicial extends StatefulWidget {

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:telas/telas/reconmenda.dart';
 import 'package:telas/telas/diagonisto_sensores.dart';
 
 class BotaoIrParaTerceiraTela extends StatelessWidget {
