@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:telas/telas/exempl.dart';
+import 'package:telas/telas/addcultura.dart';
 
+// ignore: must_be_immutable
 class BtnRedondo extends StatelessWidget {
 
   late String nomeBotao;
@@ -11,7 +14,7 @@ class BtnRedondo extends StatelessWidget {
         padding: EdgeInsets.only(left: 45, right: 45, top: 20),
         height: 90,
         child: ElevatedButton(
-          onPressed: () {},
+          onPressed: () { Navigator.push(context, MaterialPageRoute(builder: (context) => ExemploCultura()));},
           child: Center(
             child: Text(
               this.nomeBotao,
@@ -40,7 +43,7 @@ class BtnAdicionar extends StatelessWidget {
         padding: EdgeInsets.only(left: 45, right: 45, top: 20),
         height: 90,
         child: ElevatedButton(
-        onPressed: () {  },
+        onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context) => AddCultura()),  );  },
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
