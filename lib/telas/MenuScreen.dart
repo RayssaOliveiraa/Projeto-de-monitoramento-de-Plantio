@@ -1,10 +1,9 @@
-
-
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:telas/telas/LoginScreen.dart';
 import 'package:telas/telas/SettingsScreen.dart';
 import 'package:telas/telas/diagonisto_sensores.dart';
+import 'package:telas/telas/tela1.dart';
 
 class MenuScreen extends StatelessWidget {
   const MenuScreen({Key? key}) : super(key: key);
@@ -19,7 +18,7 @@ class MenuScreen extends StatelessWidget {
             if (kDebugMode) {
               print("Voltar");
             }
-            Navigator.pop(context); 
+            Navigator.pop(context);
           },
           child: Padding(
             padding: const EdgeInsets.only(left: 20.0, top: 15.0),
@@ -53,7 +52,10 @@ class MenuScreen extends StatelessWidget {
                         if (kDebugMode) {
                           print("Diagnóstico de sensores");
                         }
-                        Navigator.push(context, MaterialPageRoute(builder: (context) => const DiagonisticoSensores()),  ); 
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => const DiagonisticoSensores()),
+                        );
                       },
                     ),
                     const SizedBox(height: 14.0),
@@ -63,7 +65,10 @@ class MenuScreen extends StatelessWidget {
                         if (kDebugMode) {
                           print("Configurações");
                         }
-                        Navigator.push(context, MaterialPageRoute(builder: (context) => const SettingsScreen()),  ); 
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => const SettingsScreen()),
+                        );
                       },
                       image: 'images/configuracao.png',
                     ),
@@ -71,10 +76,10 @@ class MenuScreen extends StatelessWidget {
                     buildButton(
                       label: 'Suporte',
                       onPressed: () {
-                        if (kDebugMode) {
-                          print("Suporte");
-                        }
-                        //Navigator.push(context, MaterialPageRoute(builder: (context) => const NomeDaTeal()),  ); 
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => Tela1()),
+                        );
                       },
                       image: 'images/suporte.png',
                     ),
@@ -90,7 +95,10 @@ class MenuScreen extends StatelessWidget {
                     if (kDebugMode) {
                       print("Sair");
                     }
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => const LoginScreen()),  ); 
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const LoginScreen()),
+                    );
                   },
                   style: ElevatedButton.styleFrom(
                     padding: const EdgeInsets.symmetric(horizontal: 20.0),

@@ -14,7 +14,7 @@ class _DiagonisticoSensoresState extends State<DiagonisticoSensores> {
       backgroundColor: Color(0xFF87A586),
       extendBodyBehindAppBar: true,
       appBar: AppBar(
-        leading: IconButton(onPressed: () {  }, icon: Image.asset("images/menu.png")),
+        leading: IconButton(onPressed: () {Navigator.pop(context);}, icon: Image.asset("assets/img_seta_esquerda_3.png")),
         backgroundColor: Colors.transparent,
         elevation: 0,
       ),
