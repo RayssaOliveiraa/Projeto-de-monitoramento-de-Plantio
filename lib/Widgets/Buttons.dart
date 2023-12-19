@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:telas/telas/exempl.dart';
 
 class BtnRedondo extends StatelessWidget {
 
@@ -11,7 +12,7 @@ class BtnRedondo extends StatelessWidget {
         padding: EdgeInsets.only(left: 45, right: 45, top: 20),
         height: 90,
         child: ElevatedButton(
-          onPressed: () {},
+          onPressed: () { Navigator.push(context, MaterialPageRoute(builder: (context) => ExemploCultura()));},
           child: Center(
             child: Text(
               this.nomeBotao,
