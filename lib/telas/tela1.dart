@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/telas/addcultura.dart';
-import 'package:flutter_application_2/widgets/appbar.dart';
-import 'package:flutter_application_2/widgets/botao_tela1.dart';
-import 'package:flutter_application_2/telas/pagina.dart';
-import 'package:flutter_application_2/telas/addcultura.dart';
+import 'package:telas/telas/addcultura.dart';
+import 'package:telas/widgets/appbar.dart';
+import 'package:telas/widgets/botao_tela1.dart';
+import 'package:telas/telas/addcultura.dart';
 
 class Tela1 extends StatelessWidget {
   @override

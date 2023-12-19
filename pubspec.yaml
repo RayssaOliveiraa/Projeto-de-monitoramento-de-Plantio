@@ -70,6 +70,7 @@ flutter:
       - images/conexão.png
       - images/notificacao.png
       - assets/
+      - assets/images/
  
 
   # An image asset can refer to one or more resolution-specific "variants", see

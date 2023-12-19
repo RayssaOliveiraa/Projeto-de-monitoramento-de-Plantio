@@ -10,7 +10,7 @@ class MyAppBartranspare extends StatelessWidget implements PreferredSizeWidget {
       backgroundColor: Colors.transparent,
       leading: IconButton(
         icon: Image.asset(
-          'assets/images/seta-esquerda.png', // Substitua pelo caminho real da sua imagem
+          'assets/images/seta-esquerda.png',
           width: 24,
           height: 24,
         ),

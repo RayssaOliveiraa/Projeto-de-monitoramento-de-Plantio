@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/widgets/appbar.dart';
+import 'package:telas/widgets/appbar.dart';
 
 class AddCultura extends StatelessWidget {
   
