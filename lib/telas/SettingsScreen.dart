@@ -2,6 +2,7 @@
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+//import 'package:telas/telas/tela1.dart';
 
 class SettingsScreen extends StatefulWidget {
   const SettingsScreen({Key? key}) : super(key: key);
@@ -82,7 +83,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 if (kDebugMode) {
                   print("Conexões");
                 }
-                //Navigator.push(context, MaterialPageRoute(builder: (context) => const nome da tela()),  ); 
+               // Navigator.push(context, MaterialPageRoute(builder: (context) =>  Tela1()),  ); 
               },
               style: ElevatedButton.styleFrom(
                 padding: const EdgeInsets.all(20),

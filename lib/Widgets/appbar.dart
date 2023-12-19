@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 class MyAppBartranspare extends StatelessWidget implements PreferredSizeWidget {
   @override
@@ -15,7 +16,11 @@ class MyAppBartranspare extends StatelessWidget implements PreferredSizeWidget {
           height: 24,
         ),
         onPressed: () {
-          Navigator.of(context).pop();
+          if (Navigator.canPop(context)) {
+            Navigator.of(context).pop();
+          } else {
+            SystemNavigator.pop();
+          }
         },
       ),
     );
